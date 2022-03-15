@@ -1,0 +1,251 @@
+body {
+    background-color: #fff;
+}
+
+/* navbar */
+.kanan {
+    margin-left: 225px;
+}
+.navbar {
+    background-color: #1e468b;
+}
+/* akhir navbar */
+
+/* utama*/
+.jumbotron{
+    background-image: url(assets/Utama.png);
+    background-size: cover;
+    height: 650px;
+    position: relative;
+}
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.309);
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4 {
+    font-weight: 200;
+    font-family: 'League Gothic', sans-serif;
+    text-shadow: 3px 3px 1px rgba(255, 255, 255, 0.631);
+    z-index: 1;
+    position: relative;
+}
+.link {
+    background-color: #1e468b;
+}
+hr {
+    width: 50%;
+    z-index: 1;
+    position: relative;
+}
+.lead {
+    font-weight: 600;
+    z-index: 1;
+    position: relative;
+}
+.carousel p span {
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+}
+.ngajak {
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+}
+/* akhir utama */
+
+/* profil */
+.profil {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.profilkanan {
+    margin-top: 25px;
+}
+.profilkanan h3 {
+    font-family: 'Russo One', sans-serif;
+}
+.profilkanan p {
+    font-size: 17px;
+    font-weight: 500;
+}
+.kecilin h5 {
+    font-size: 10;
+}
+.card-body {
+    font-weight: 500;
+    font-size: 11px;
+}
+.jdl {
+    margin-bottom: 25px;
+    background-color: #1e468b;
+    width: 37%;
+}
+/* akhir profil */
+
+/* jasa */
+.card-img-top {
+    position: relative;
+}
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.judul2 {    
+    color: white;
+    margin-top: 110px;
+    font-size: 20px;
+}
+.judul {
+    color: white;
+    margin-top: 125px;
+    font-size: 20px;
+}
+.jasa {
+    margin-top: 150px;
+}
+.layer:hover {
+    background: #1e468bc1;  
+}
+.judul3 {
+    width:30%;
+}
+/* akhir jasa */
+
+/* Gallery */
+.slider {
+    margin-top: 250px;
+    margin-bottom: 130px;
+}
+.kecilin {
+    font-size: 10px;
+}
+.jdl2 {
+    margin-bottom: 25px;
+    background-color: #1e468b;
+    width: 37%;
+}
+.detail {
+    text-shadow:2px 2px 1px black;
+}
+/* akhir galeri */
+
+/* staff */
+.img-text {
+    width: 90%;
+    height: 200px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #262626;
+    color: #fff;
+    border-radius: 15px;
+}
+.staff {
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+.img-text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.img-text p {
+    font-size: 14px;
+}
+.single-box {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+}
+.orang {    
+    position: absolute;
+    border: 5px solid #fff;
+    overflow:hidden;
+    border-radius:50%;
+}
+.bulet {
+    left:0;
+    top:auto;
+    bottom:-70px;
+
+}
+.bulet li {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;    
+    background-color: #262626;
+}
+.bungkus2{
+    background-color: #1e468b;
+    margin-left: 50%;
+    border-radius: 25px 0px 0px 25px;
+}
+/* akhir staff */
+
+/* contact */
+.bungkus{
+    background-color: #1e468b;
+    margin-right: 50%;
+    border-radius: 0px 25px 25px 0px;
+}
+.jumbotron2 {
+    height:400px;
+    background-image: url(assets/abstract-blur-defocused-hotel-lobby-interior.jpg);
+}
+/* akhir contact */
+
+/* footer */
+    footer {
+        margin-top: -24px;
+        background-color: #1e468b;
+        border-radius: 25px 0px 0px 25px;
+        margin-left: 50%;
+    }
+/* akhir footer */
+@media (max-width: 992px) {
+    .img-text h5 {
+        margin-top: 40px;
+        font-size: 15px;
+    }
+   .img-text p {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-area {
+        left:135px;
+    }
+    .img-text {
+        padding-bottom: 100px;
+    }
+    .img-text p {
+        font-size: 14px;
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .card img {
+        height: 250px;
+    }
+    .img-text {
+        padding-bottom: 100px;
+    }
+    .img-text h5 {
+        font-size: 15px;
+    }
+    .img-text p {
+        font-size: 14px;
+    }
+}
