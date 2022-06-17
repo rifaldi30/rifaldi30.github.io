@@ -1,24 +1,39 @@
 body {
-    background-color: #fff;
+    background-color: #025da6;
+}
+
+html {
+    scroll-behavior:smooth;
 }
 
 /* navbar */
-.kanan {
-    margin-left: 225px;
-}
 .navbar {
-    background-color: #1e468b;
+    z-index: 2;
 }
+.navbar-brand {
+    font-size: 40px;
+}
+a .nav-link {
+    color: blue;
+    transition: all 0.3;
+}
+.nav-link:hover {
+    transform: scale(1.5);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* akhir navbar */
 
 /* utama*/
 .jumbotron{
-    background-image: url(assets/Utama.png);
+    margin-top: -86px;
+    background-image: url(assets/Usu.png);
     background-size: cover;
-    height: 650px;
+    height: 730px;
     position: relative;
 }
-.jumbotron::after {
+/* .jumbotron::after {
     content: '';
     display: block;
     width: 100%;
@@ -26,6 +41,10 @@ body {
     background-color: rgba(0, 0, 0, 0.309);
     position: absolute;
     bottom: 0;
+} */
+.btn:hover {
+    color: #1e468b;
+    background-color: white;
 }
 .jumbotron .display-4 {
     font-weight: 200;
@@ -36,6 +55,9 @@ body {
 }
 .link {
     background-color: #1e468b;
+}
+.display-4 {
+    margin-top: 70px;
 }
 hr {
     width: 50%;
@@ -60,6 +82,10 @@ hr {
 /* akhir utama */
 
 /* profil */
+.andalan {
+    border-radius: 50px;
+    box-shadow: -30px 30px rgba(0, 0, 0, 0.397);
+}
 .profil {
     margin-top: 150px;
     margin-bottom: 150px;
@@ -81,43 +107,112 @@ hr {
     font-weight: 500;
     font-size: 11px;
 }
+.laut {
+    color:#025da6;
+    font-size: 50px;
+}
 .jdl {
-    margin-bottom: 25px;
-    background-color: #1e468b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    box-shadow: -16px 16px rgba(0, 0, 0, 0.397);
+    background-color: white;
     width: 37%;
+}
+.dek {
+    margin-left: 50px;
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: -30px 30px rgba(0, 0, 0, 0.397);
+}
+.rapih {
+    margin: 50px;
+    color:#025da6;
+}
+.rapihin {
+    margin-top: 10px;
+    color:#025da6;
 }
 /* akhir profil */
 
+/* event */
+.sama {
+    margin-bottom: 35px;
+    box-shadow: -16px 16px rgba(0, 0, 0, 0.397);
+    width: 200px;
+}
+.carousel-item img {
+    border-radius: 50px;
+    border: 5px solid white;
+}
+.wsr {
+    text-align: center;
+    background-color: white;
+    color:#025da6;
+    padding:45px 45px 40px 35px;
+    border-radius: 100%;
+    box-shadow: -36px 16px rgba(0, 0, 0, 0.397);
+    width: 250px;
+    height: 250px;
+}
+.wsr h3 {
+    font-size: 40px;
+}
 /* jasa */
+.jdl3 {
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: -16px 16px rgba(0, 0, 0, 0.397);
+    background-color: white;
+    width: 37%;
+}
 .card-img-top {
     position: relative;
 }
+.card-img-top{
+    border-radius: 10px 10px 10px 10px;
+}
+.utama {
+    border-radius: 10px;
+}
 .layer {
     background: transparent;
-    height: 100%;
     width: 100%;
+    height: 100%;
     position: absolute;
     top:0;
     left:0;
+    border-radius: 10px 10px 10px 10px;
 }
-.judul2 {    
+.pilihan {
+    display: none;
+    margin-top: 130px;
+    margin-left: 25%;
+    padding: 10px 0px;
+    font-weight: 900 !important;
+    background: #025da6;
+    width: 50%;
     color: white;
-    margin-top: 110px;
-    font-size: 20px;
-}
-.judul {
-    color: white;
-    margin-top: 125px;
-    font-size: 20px;
-}
-.jasa {
-    margin-top: 150px;
+    border-radius: 20px;
+    /* transition */
+    transition: all 0.3s;    
 }
 .layer:hover {
-    background: #1e468bc1;  
+    background-color: #ffffff7e;
 }
-.judul3 {
-    width:30%;
+.layer:hover .pilihan {
+    display: grid;
+}
+.pilihan:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+}
+.terakhir {
+    margin-bottom: 100px;
+    
 }
 /* akhir jasa */
 
@@ -141,13 +236,13 @@ hr {
 
 /* staff */
 .img-text {
-    width: 90%;
+    width:95%;
     height: 200px;
     display: block;
     text-align: center;
     padding: 40% 5%;
-    background: #262626;
-    color: #fff;
+    background-color:white ;
+    color: #1e468b;
     border-radius: 15px;
 }
 .staff {
@@ -167,11 +262,11 @@ hr {
     margin-bottom: 30px;
     display: flex;
 }
-.orang {    
+.col-md-4 img {    
     position: absolute;
-    border: 5px solid #fff;
+    border: 10px solid #1e468b;
     overflow:hidden;
-    border-radius:50%;
+    border-radius:80%;
 }
 .bulet {
     left:0;
@@ -183,7 +278,7 @@ hr {
     border-radius: 50%;
     width: 15px;
     height: 15px;    
-    background-color: #262626;
+    background-color: white;
 }
 .bungkus2{
     background-color: #1e468b;
@@ -193,23 +288,48 @@ hr {
 /* akhir staff */
 
 /* contact */
-.bungkus{
-    background-color: #1e468b;
-    margin-right: 50%;
-    border-radius: 0px 25px 25px 0px;
+.jdl4{
+    margin-bottom: 50px;
+    box-shadow: -16px 16px rgba(0, 0, 0, 0.397);
+    background-color: white;
+    width: 37%;
 }
-.jumbotron2 {
-    height:400px;
-    background-image: url(assets/abstract-blur-defocused-hotel-lobby-interior.jpg);
+.tengah a {
+    color: black;
+}
+.birutua:hover {
+    color: #3b5998;
+}
+.biru:hover {
+    color:#00acee;
+}
+.pink:hover {
+    color:palevioletred;
+}
+.merah:hover {
+    color:#c4302b;
+}
+i {
+    font-size: 30px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+.tengah p {
+    font-size: 20px;
+}
+.kontak {
+    border: 20px solid white;
+    height:600px;
+    background-image: url(assets/1d017d1651e30a5ced6b5709adcee383.jpg);
+    background-size: cover;
 }
 /* akhir contact */
 
 /* footer */
     footer {
-        margin-top: -24px;
-        background-color: #1e468b;
-        border-radius: 25px 0px 0px 25px;
-        margin-left: 50%;
+        background-color: white;
+        color:#1e468b;
+        font-size: 20px;
     }
 /* akhir footer */
 @media (max-width: 992px) {
@@ -236,6 +356,10 @@ hr {
 }
 
 @media (max-width: 576px) {
+    .dek {
+        margin-left: 0px;
+        box-shadow: -20px 20px rgba(0, 0, 0, 0.397);
+    }
     .card img {
         height: 250px;
     }
@@ -248,4 +372,8 @@ hr {
     .img-text p {
         font-size: 14px;
     }
+    .jdl4 {
+        width: 50%
+    }
+   
 }
